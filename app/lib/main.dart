@@ -52,6 +52,31 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    "Modes",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 46.0,
+                      letterSpacing: 1.0,
+                    ),
+                  ),
+                  IconButton(
+                    icon: Icon(
+                      //CustomIcons.option
+                      //size: 12.0,
+                       Icons.adjust,
+                      color: Colors.white,
+                    ),
+                    onPressed: (){},
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
