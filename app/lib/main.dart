@@ -69,13 +69,31 @@ class _MyAppState extends State<MyApp> {
                     icon: Icon(
                       //CustomIcons.option
                       //size: 12.0,
-                       Icons.adjust,
+                      Icons.adjust,
                       color: Colors.white,
                     ),
-                    onPressed: (){},
+                    onPressed: () {},
                   ),
                 ],
               ),
+            ),
+            Row(
+              children: <Widget>[
+                Container(
+                  decoration: BoxDecoration(
+                    color: Color(0xFFff6e6e),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Animated",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
