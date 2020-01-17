@@ -101,6 +101,15 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    width: 15.0,
+                  ),
+                  Text(
+                    "25+ Stories",
+                    style: TextStyle(
+                      color: Colors.blueAccent,
+                    ),
+                  )
                 ],
               ),
             ),
