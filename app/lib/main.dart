@@ -30,11 +30,20 @@ class _MyAppState extends State<MyApp> {
                 bottom: 8.0,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   IconButton(
                     icon: Icon(
                       //CustomIcons.menu, fontFamily is not with us
                       Icons.menu,
+                      color: Colors.white,
+                      size: 30.0,
+                    ),
+                    onPressed: () {},
+                  ),
+                  IconButton(
+                    icon: Icon(
+                      Icons.search,
                       color: Colors.white,
                       size: 30.0,
                     ),
