@@ -77,29 +77,32 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
-            Row(
-              children: <Widget>[
-                Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xFFff6e6e),
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: Center(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 22.0,
-                        vertical: 6.0,
-                      ),
-                      child: Text(
-                        "Animated",
-                        style: TextStyle(
-                          color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFff6e6e),
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 22.0,
+                          vertical: 6.0,
+                        ),
+                        child: Text(
+                          "Animated",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
