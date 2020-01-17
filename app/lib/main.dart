@@ -1,15 +1,36 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(HomePage());
+void main() => runApp(
+      MaterialApp(
+        home: MyApp(),
+        debugShowCheckedModeBanner: false,
+      ),
+    );
 
-class HomePage extends StatefulWidget{
+class MyApp extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _MyAppState createState() => _MyAppState();
 }
 
-class _HomePageState extends State<HomePage>{
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text('First App'),);
+    return Scaffold(
+      backgroundColor: Color(0xFF2d3447),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                IconButton(
+                  icon: Icon(Icons.menu),
+                  onPressed: (){},
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
