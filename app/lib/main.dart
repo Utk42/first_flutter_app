@@ -85,10 +85,16 @@ class _MyAppState extends State<MyApp> {
                     borderRadius: BorderRadius.circular(20.0),
                   ),
                   child: Center(
-                    child: Text(
-                      "Animated",
-                      style: TextStyle(
-                        color: Colors.white,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 22.0,
+                        vertical: 6.0,
+                      ),
+                      child: Text(
+                        "Animated",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
