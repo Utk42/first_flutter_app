@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './customIcons.dart';
+
 void main() => runApp(
       MaterialApp(
         home: MyApp(),
@@ -23,8 +25,13 @@ class _MyAppState extends State<MyApp> {
             Row(
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.menu),
-                  onPressed: (){},
+                  icon: Icon(
+                    //CustomIcons.menu, fontFamily is not with us
+                    Icons.menu,
+                    color: Colors.white,
+                    size: 30.0,
+                  ),
+                  onPressed: () {},
                 ),
               ],
             ),
