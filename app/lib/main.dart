@@ -147,6 +147,68 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
+            SizedBox(height: 10.0,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    "Your Bookings",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 46.0,
+                      letterSpacing: 1.0,
+                    ),
+                  ),
+                  IconButton(
+                    icon: Icon(
+                      //CustomIcons.option
+                      //size: 12.0,
+                      Icons.adjust,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFff6e6e),
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 22.0,
+                          vertical: 6.0,
+                        ),
+                        child: Text(
+                          "Recent",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 15.0,
+                  ),
+                  Text(
+                    "9+ Bookings",
+                    style: TextStyle(
+                      color: Colors.blueAccent,
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
