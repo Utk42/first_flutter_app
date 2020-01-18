@@ -147,7 +147,9 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
-            SizedBox(height: 10.0,),
+            SizedBox(
+              height: 10.0,
+            ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Row(
@@ -207,6 +209,17 @@ class _MyAppState extends State<MyApp> {
                     ),
                   )
                 ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 18.0),
+              child: Image.asset(
+                "assets/images/booking.png",
+                width: 296.0,
+                height: 222.0,
               ),
             ),
           ],
