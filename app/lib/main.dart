@@ -76,19 +76,9 @@ class _MyAppState extends State<MyApp> {
                       letterSpacing: 1.0,
                     ),
                   ),
-                  IconButton(
-                    icon: Icon(
-                      //CustomIcons.option
-                      //size: 12.0,
-                      Icons.adjust,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {},
-                  ),
                 ],
               ),
             ),
-            
             Padding(
               padding: const EdgeInsets.only(
                 left: 40.0,
@@ -124,15 +114,6 @@ class _MyAppState extends State<MyApp> {
                       fontSize: 46.0,
                       letterSpacing: 1.0,
                     ),
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      //CustomIcons.option
-                      //size: 12.0,
-                      Icons.adjust,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {},
                   ),
                 ],
               ),
@@ -179,7 +160,10 @@ class _MyAppState extends State<MyApp> {
             Row(
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.only(left: 18.0, bottom: 10.0,),
+                  padding: EdgeInsets.only(
+                    left: 18.0,
+                    bottom: 10.0,
+                  ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(10.0)),
                     child: Image.asset(
@@ -197,4 +181,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
