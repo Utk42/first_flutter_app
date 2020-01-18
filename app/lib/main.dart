@@ -196,17 +196,49 @@ class CardScrollWidget extends StatelessWidget {
               bottom: padding + verticalInset * max(-delta, 0.0),
               start: start,
               textDirection: TextDirection.rtl,
-              child: Container(
-                child: AspectRatio(
-                  aspectRatio: cardAspectRatio,
-                  child: Stack(
-                    fit: StackFit.expand,
-                    children: <Widget>[
-                      Image.asset(
-                        images[i],
-                        fit: BoxFit.cover,
-                      )
-                    ],
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16.0),
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      offset: Offset(3.0, 6.0),
+                      blurRadius: 10.0,
+                    )
+                  ]),
+                  child: AspectRatio(
+                    aspectRatio: cardAspectRatio,
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: <Widget>[
+                        Image.asset(
+                          images[i],
+                          fit: BoxFit.cover,
+                        ),
+                        Align(
+                          alignment: Alignment.bottomLeft,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Padding(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 36.0,
+                                  vertical: 8.0,
+                                ),
+                                child: Text(
+                                  title[i],
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 25.0,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
