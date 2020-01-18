@@ -127,20 +127,25 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
-            Stack(
-              children: <Widget>[
-                CardScrollWidget(currentPage),
-                Positioned.fill(
-                  child: PageView.builder(
-                    itemCount: images.length,
-                    controller: controller,
-                    reverse: true,
-                    itemBuilder: (context, index) {
-                      return Container();
-                    },
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 40.0,
+              ),
+              child: Stack(
+                children: <Widget>[
+                  CardScrollWidget(currentPage),
+                  Positioned.fill(
+                    child: PageView.builder(
+                      itemCount: images.length,
+                      controller: controller,
+                      reverse: true,
+                      itemBuilder: (context, index) {
+                        return Container();
+                      },
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
