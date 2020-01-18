@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../pages/yourCar.dart';
+import '../pages/subscription.dart';
+import '../pages/offer.dart';
+
+
 class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,7 +20,12 @@ class BottomBar extends StatelessWidget {
               children: <Widget>[
                 IconButton(
                   icon: Icon(Icons.directions_car),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => YourCar()),
+                    );
+                  },
                 ),
                 Text('Your Cars'),
               ],
@@ -25,10 +35,15 @@ class BottomBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               IconButton(
-                icon: Icon(Icons.home),
-                onPressed: () {},
+                icon: Icon(Icons.local_offer),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Offer()),
+                    );
+                },
               ),
-              Text('Home'),
+              Text('Offers'),
             ],
           ),
           Column(
@@ -36,7 +51,12 @@ class BottomBar extends StatelessWidget {
             children: <Widget>[
               IconButton(
                 icon: Icon(Icons.subscriptions),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Subscription()),
+                    );
+                },
               ),
               Text('Subscriptions'),
             ],

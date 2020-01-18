@@ -5,6 +5,7 @@ import './models/data.dart';
 import './widgets/cardScrollWidget.dart';
 import './widgets/bottomBar.dart';
 import './widgets/scrollSign.dart';
+import './pages/profile.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -61,7 +62,12 @@ class _MyAppState extends State<MyApp> {
                       color: Colors.black,
                       size: 30.0,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Profile()),
+                    );
+                    },
                   ),
                 ],
               ),
