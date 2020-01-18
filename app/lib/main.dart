@@ -214,13 +214,20 @@ class _MyAppState extends State<MyApp> {
             SizedBox(
               height: 20,
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 18.0),
-              child: Image.asset(
-                "assets/images/booking.png",
-                width: 296.0,
-                height: 222.0,
-              ),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(left: 18.0, bottom: 10.0,),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    child: Image.asset(
+                      "assets/images/booking.png",
+                      width: 296.0,
+                      height: 222.0,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
