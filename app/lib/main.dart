@@ -80,10 +80,10 @@ class _MyAppState extends State<MyApp> {
                       letterSpacing: 1.0,
                     ),
                   ),
+                  ScrollSign(),
                 ],
               ),
             ),
-            ScrollSign(),
             Padding(
               padding: const EdgeInsets.only(
                 left: 20.0,

@@ -92,7 +92,7 @@ class CardScrollWidget extends StatelessWidget {
                                           "INR",
                                           style: TextStyle(
                                             color: Colors.green[300],
-                                            fontSize: 20.0,
+                                            fontSize: 16.0,
                                           ),
                                         ),
                                         Column(
@@ -101,15 +101,15 @@ class CardScrollWidget extends StatelessWidget {
                                               actualPrice[i],
                                               style: TextStyle(
                                                 decoration: TextDecoration.lineThrough,
-                                                color: Colors.black,
-                                                fontSize: 16.0,
+                                                color: Colors.red[800],
+                                                fontSize: 12.0,
                                               ),
                                             ),
                                             Text(
                                               discountedPrice[i],
                                               style: TextStyle(
                                                 color: Colors.green[300],
-                                                fontSize: 18.0,
+                                                fontSize: 16.0,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
