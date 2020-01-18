@@ -69,7 +69,7 @@ class _MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    "Modes",
+                    "We Serve",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 46.0,
@@ -88,42 +88,7 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0),
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Color(0xFFff6e6e),
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 22.0,
-                          vertical: 6.0,
-                        ),
-                        child: Text(
-                          "Animated",
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Text(
-                    "25+ Stories",
-                    style: TextStyle(
-                      color: Colors.blueAccent,
-                    ),
-                  )
-                ],
-              ),
-            ),
+            
             Padding(
               padding: const EdgeInsets.only(
                 left: 40.0,

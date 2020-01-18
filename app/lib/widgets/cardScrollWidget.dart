@@ -73,56 +73,51 @@ class CardScrollWidget extends StatelessWidget {
                             mainAxisSize: MainAxisSize.min,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 20.0,
-                                ),
-                                child: SingleChildScrollView(
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
-                                    children: <Widget>[
-                                      Text(
-                                        title[i],
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 25.0,
-                                          fontWeight: FontWeight.bold,
+                              SingleChildScrollView(
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Text(
+                                      title[i],
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 25.0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Text(
+                                          "INR",
+                                          style: TextStyle(
+                                            color: Colors.green[300],
+                                            fontSize: 20.0,
+                                          ),
                                         ),
-                                      ),
-                                      Row(
-                                        children: <Widget>[
-                                          Text(
-                                            "INR",
-                                            style: TextStyle(
-                                              color: Colors.green[300],
-                                              fontSize: 20.0,
+                                        Column(
+                                          children: <Widget>[
+                                            Text(
+                                              actualPrice[i],
+                                              style: TextStyle(
+                                                decoration: TextDecoration.lineThrough,
+                                                color: Colors.black,
+                                                fontSize: 16.0,
+                                              ),
                                             ),
-                                          ),
-                                          Column(
-                                            children: <Widget>[
-                                              Text(
-                                                actualPrice[i],
-                                                style: TextStyle(
-                                                  decoration: TextDecoration.lineThrough,
-                                                  color: Colors.black,
-                                                  fontSize: 16.0,
-                                                ),
+                                            Text(
+                                              discountedPrice[i],
+                                              style: TextStyle(
+                                                color: Colors.green[300],
+                                                fontSize: 18.0,
+                                                fontWeight: FontWeight.bold,
                                               ),
-                                              Text(
-                                                discountedPrice[i],
-                                                style: TextStyle(
-                                                  color: Colors.green[300],
-                                                  fontSize: 18.0,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
                                 ),
                               ),
                               SizedBox(
