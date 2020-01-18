@@ -51,7 +51,7 @@ class CardScrollWidget extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(16.0),
                 child: Container(
-                  decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                  decoration: BoxDecoration(color: Colors.black, boxShadow: [
                     BoxShadow(
                       color: Colors.black12,
                       offset: Offset(3.0, 6.0),

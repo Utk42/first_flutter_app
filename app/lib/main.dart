@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import './models/customIcons.dart';
 import './models/data.dart';
 import './widgets/cardScrollWidget.dart';
+import './widgets/bottomBar.dart';
+import './widgets/scrollSign.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -29,7 +31,8 @@ class _MyAppState extends State<MyApp> {
     });
 
     return Scaffold(
-      backgroundColor: Color(0xFF2d3447),
+      backgroundColor: Colors.orangeAccent[100],
+      bottomNavigationBar: BottomBar(),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -47,15 +50,15 @@ class _MyAppState extends State<MyApp> {
                     icon: Icon(
                       //CustomIcons.menu, fontFamily is not with us
                       Icons.menu,
-                      color: Colors.white,
+                      color: Colors.black,
                       size: 30.0,
                     ),
                     onPressed: () {},
                   ),
                   IconButton(
                     icon: Icon(
-                      Icons.search,
-                      color: Colors.white,
+                      Icons.assignment_ind,
+                      color: Colors.black,
                       size: 30.0,
                     ),
                     onPressed: () {},
@@ -71,8 +74,9 @@ class _MyAppState extends State<MyApp> {
                   Text(
                     "We Serve",
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 46.0,
+                      color: Colors.black,
+                      fontSize: 40.0,
+                      fontWeight: FontWeight.bold,
                       letterSpacing: 1.0,
                     ),
                   ),
@@ -108,10 +112,11 @@ class _MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    "Your Bookings",
+                    "Recent Bookings",
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 46.0,
+                      color: Colors.black,
+                      fontSize: 40.0,
+                      fontWeight: FontWeight.bold,
                       letterSpacing: 1.0,
                     ),
                   ),
