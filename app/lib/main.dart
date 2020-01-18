@@ -224,16 +224,39 @@ class CardScrollWidget extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: 36.0,
-                                  vertical: 8.0,
                                 ),
                                 child: Text(
                                   title[i],
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 25.0,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                              )
+                              ),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 24.0, bottom: 6.0),
+                                child: Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 22.0,
+                                    vertical: 6.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.blueAccent,
+                                    borderRadius: BorderRadius.circular(20.0),
+                                  ),
+                                  child: Text(
+                                    "Book",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         ),
