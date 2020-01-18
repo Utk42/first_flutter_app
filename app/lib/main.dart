@@ -75,7 +75,7 @@ class _MyAppState extends State<MyApp> {
                     "We Serve",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 40.0,
+                      fontSize: 36.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0,
                     ),
@@ -83,9 +83,10 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
+            ScrollSign(),
             Padding(
               padding: const EdgeInsets.only(
-                left: 40.0,
+                left: 20.0,
               ),
               child: Stack(
                 children: <Widget>[
@@ -115,7 +116,7 @@ class _MyAppState extends State<MyApp> {
                     "Recent Bookings",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 40.0,
+                      fontSize: 36.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0,
                     ),
