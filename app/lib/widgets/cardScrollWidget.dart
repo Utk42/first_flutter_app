@@ -75,14 +75,53 @@ class CardScrollWidget extends StatelessWidget {
                             children: <Widget>[
                               Padding(
                                 padding: EdgeInsets.symmetric(
-                                  horizontal: 36.0,
+                                  horizontal: 20.0,
                                 ),
-                                child: Text(
-                                  title[i],
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 25.0,
-                                    fontWeight: FontWeight.bold,
+                                child: SingleChildScrollView(
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: <Widget>[
+                                      Text(
+                                        title[i],
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 25.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Row(
+                                        children: <Widget>[
+                                          Text(
+                                            "INR",
+                                            style: TextStyle(
+                                              color: Colors.green[300],
+                                              fontSize: 20.0,
+                                            ),
+                                          ),
+                                          Column(
+                                            children: <Widget>[
+                                              Text(
+                                                actualPrice[i],
+                                                style: TextStyle(
+                                                  decoration: TextDecoration.lineThrough,
+                                                  color: Colors.black,
+                                                  fontSize: 16.0,
+                                                ),
+                                              ),
+                                              Text(
+                                                discountedPrice[i],
+                                                style: TextStyle(
+                                                  color: Colors.green[300],
+                                                  fontSize: 18.0,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -92,21 +131,26 @@ class CardScrollWidget extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.only(
                                     left: 24.0, bottom: 6.0),
-                                child: Container(
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: 22.0,
-                                    vertical: 6.0,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: Colors.blueAccent,
-                                    borderRadius: BorderRadius.circular(20.0),
-                                  ),
-                                  child: Text(
-                                    "Book",
-                                    style: TextStyle(
-                                      color: Colors.white,
+                                child: Row(
+                                  children: <Widget>[
+                                    Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 22.0,
+                                        vertical: 6.0,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: Colors.blueAccent,
+                                        borderRadius:
+                                            BorderRadius.circular(20.0),
+                                      ),
+                                      child: Text(
+                                        "Book",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
                                     ),
-                                  ),
+                                  ],
                                 ),
                               ),
                             ],

@@ -15,3 +15,21 @@ List<String> title = [
   "Foam Wash",
   "Polish Wash",
 ];
+
+List<String> actualPrice = [
+  "200",
+  "450",
+  "700",
+  "200",
+  "450",
+  "700",
+];
+
+List<String> discountedPrice = [
+  "150",
+  "350",
+  "600",
+  "150",
+  "350",
+  "600",
+];
