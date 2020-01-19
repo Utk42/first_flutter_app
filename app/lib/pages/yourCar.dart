@@ -5,9 +5,17 @@ class YourCar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow[100],
+      appBar: AppBar(
+        title: Text(
+          'Your Cars',
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.orangeAccent[100],
+      ),
       body: SingleChildScrollView(
         child: Center(
-          child: RaisedButton(
+           child: OutlineButton(
+            color: Colors.orangeAccent[100],
             onPressed: () {
               // Navigate back to first route when tapped.
               Navigator.pop(context);
