@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import './models/customIcons.dart';
 import './models/data.dart';
 import './widgets/cardScrollWidget.dart';
 import './widgets/bottomBar.dart';
 import './widgets/scrollSign.dart';
 import './pages/profile.dart';
+import './pages/offer.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -47,27 +47,36 @@ class _MyAppState extends State<MyApp> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  IconButton(
-                    icon: Icon(
-                      //CustomIcons.menu, fontFamily is not with us
-                      Icons.menu,
-                      color: Colors.black,
-                      size: 30.0,
-                    ),
-                    onPressed: () {},
+                  Column(
+                    children: <Widget>[
+                      IconButton(
+                        icon: Icon(
+                          //CustomIcons.menu, fontFamily is not with us
+                          Icons.account_box,
+                          color: Colors.black,
+                          size: 32.0,
+                        ),
+                        onPressed: () {},
+                      ),
+                      Text('Account', style: TextStyle(fontSize: 12.0),),
+                    ],
                   ),
-                  IconButton(
-                    icon: Icon(
-                      Icons.assignment_ind,
-                      color: Colors.black,
-                      size: 30.0,
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Profile()),
-                    );
-                    },
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      IconButton(
+                        icon: Icon(Icons.local_offer),
+                        iconSize: 16.0,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Offer()),
+                          );
+                        },
+                      ),
+                      Text('Offers', style: TextStyle(fontSize: 12.0),),
+                    ],
                   ),
                 ],
               ),
@@ -81,7 +90,7 @@ class _MyAppState extends State<MyApp> {
                     "We Serve",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 36.0,
+                      fontSize: 32.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0,
                     ),
@@ -119,10 +128,10 @@ class _MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    "Recent Bookings",
+                    "Upcoming Bookings",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 36.0,
+                      fontSize: 32.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0,
                     ),

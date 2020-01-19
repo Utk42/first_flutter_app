@@ -7,7 +7,7 @@ class Subscription extends StatelessWidget {
       backgroundColor: Colors.yellow[100],
       appBar: AppBar(
         title: Text(
-          'Offer',
+          'Subscription',
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.orangeAccent[100],

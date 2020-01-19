@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Profile extends StatelessWidget {
+class Booking extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow[100],
       appBar: AppBar(
         title: Text(
-          'Profile',
+          'My Bookings',
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.orangeAccent[100],

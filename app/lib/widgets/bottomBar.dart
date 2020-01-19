@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
-import '../pages/yourCar.dart';
+import '../pages/myCar.dart';
 import '../pages/subscription.dart';
 import '../pages/offer.dart';
+import '../pages/booking.dart';
 
 
 class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(bottom: 2.0),
       color: Colors.yellow[100],
-      height: 64.0,
+      height: 66.0,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         verticalDirection: VerticalDirection.down,
@@ -19,15 +21,15 @@ class BottomBar extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.directions_car),
+                  icon: Icon(Icons.directions_car, size: 36.0,),
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => YourCar()),
+                      MaterialPageRoute(builder: (context) => MyCar()),
                     );
                   },
                 ),
-                Text('Your Cars'),
+                Text('My Cars', style: TextStyle(fontWeight: FontWeight.bold),),
               ],
             ),
           ),
@@ -35,22 +37,22 @@ class BottomBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               IconButton(
-                icon: Icon(Icons.local_offer),
+                icon: Icon(Icons.event_note, size: 36.0,),
                 onPressed: () {
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Offer()),
+                      MaterialPageRoute(builder: (context) => Booking()),
                     );
                 },
               ),
-              Text('Offers'),
+              Text('Bookings', style: TextStyle(fontWeight: FontWeight.bold),),
             ],
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               IconButton(
-                icon: Icon(Icons.subscriptions),
+                icon: Icon(Icons.cached, size: 36.0,),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -58,7 +60,7 @@ class BottomBar extends StatelessWidget {
                     );
                 },
               ),
-              Text('Subscriptions'),
+              Text('Subscriptions', style: TextStyle(fontWeight: FontWeight.bold),),
             ],
           ),
         ],

@@ -46,6 +46,8 @@ flutter:
     - assets/images/waterWash.png
     - assets/images/foamWash.jpeg
     - assets/images/polish.jpeg
+    - assets/images/defaultPage.jpeg
+    - assets/images/carModel.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

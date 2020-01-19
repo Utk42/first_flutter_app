@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class YourCar extends StatelessWidget {
+class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow[100],
       appBar: AppBar(
         title: Text(
-          'Your Cars',
+          'Add Your Cars',
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.orangeAccent[100],
